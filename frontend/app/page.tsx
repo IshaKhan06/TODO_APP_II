@@ -1,8 +1,8 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import api from '../lib/api';
-import Navbar from '../components/navbar';
+import api from '@/lib/api';
+import Navbar from '@/components/navbar';
 
 // Define TypeScript interfaces
 interface Todo {
