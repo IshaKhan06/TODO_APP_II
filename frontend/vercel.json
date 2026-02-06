@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "env": {
+    "DATABASE_URL": "$DATABASE_URL",
+    "SECRET_KEY": "$SECRET_KEY"
+  },
+  "functions": {
+    "app/api/**/*.ts": {
+      "includeFiles": "node_modules/pg/**"
+    },
+    "app/api/**/*.js": {
+      "includeFiles": "node_modules/pg/**"
+    }
+  }
+}

@@ -172,6 +172,33 @@ npm run test
 
 ## Deployment
 
-The application is designed for easy deployment to platforms like:
-- Backend: Render, Railway, or any Python hosting service
-- Frontend: Vercel, Netlify, or any static hosting service
+The application has been restructured for deployment to Vercel:
+- The FastAPI backend has been converted to Next.js API routes
+- All API endpoints are now served from the Next.js application
+- The application can now be deployed entirely to Vercel
+
+### Deploying to Vercel
+
+1. Install the Vercel CLI:
+```bash
+npm i -g vercel
+```
+
+2. Navigate to the frontend directory:
+```bash
+cd frontend
+```
+
+3. Link your project to Vercel:
+```bash
+vercel
+```
+
+4. Set the environment variables in the Vercel dashboard:
+   - `DATABASE_URL`: Your PostgreSQL database connection string
+   - `SECRET_KEY`: Your JWT secret key
+
+5. Deploy the application:
+```bash
+vercel --prod
+```
