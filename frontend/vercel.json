@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
   "version": 2,
   "env": {
     "DATABASE_URL": "$DATABASE_URL",
@@ -13,10 +12,4 @@
       "includeFiles": "node_modules/pg/**"
     }
   }
-=======
-  "buildCommand": "npm run build",
-  "devCommand": "npm run dev",
-  "installCommand": "npm install",
-  "framework": "nextjs"
->>>>>>> 21aef9fe3d6445b0de1bfdd065775ec2a2aeffcd
 }
