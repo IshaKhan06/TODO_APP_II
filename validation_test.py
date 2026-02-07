@@ -95,13 +95,13 @@ def validate_frontend_requirements():
                 missing_deps.append(dep)
 
         if missing_deps:
-            print(f"✗ Missing frontend dependencies: {missing_deps}")
+            print(f"[ERROR] Missing frontend dependencies: {missing_deps}")
             return False
 
-        print("✓ Frontend dependencies validated")
+        print("[OK] Frontend dependencies validated")
         return True
     except Exception as e:
-        print(f"✗ Frontend validation failed: {e}")
+        print(f"[ERROR] Frontend validation failed: {e}")
         return False
 
 def main():
@@ -157,20 +157,20 @@ def main():
 
     print("\n[PARTY] Validation completed successfully!")
     print("\n[STAR] Project Status: COMPLETE")
-    print("   • Full-stack Todo application implemented")
-    print("   • Authentication and user isolation working")
-    print("   • CRUD operations for todos complete")
-    print("   • Responsive UI with Tailwind CSS")
-    print("   • Constitution compliance verified")
-    print("   • TDD approach followed")
-    print("   • Ready for deployment")
+    print("   - Full-stack Todo application implemented")
+    print("   - Authentication and user isolation working")
+    print("   - CRUD operations for todos complete")
+    print("   - Responsive UI with Tailwind CSS")
+    print("   - Constitution compliance verified")
+    print("   - TDD approach followed")
+    print("   - Ready for deployment")
 
     return True
 
 if __name__ == "__main__":
     success = main()
     if success:
-        print("\n🎊 IMPLEMENTATION SUCCESSFUL! 🎊")
+        print("\n[SUCCESS] IMPLEMENTATION SUCCESSFUL!")
     else:
-        print("\n💥 VALIDATION FAILED!")
+        print("\n[ERROR] VALIDATION FAILED!")
         sys.exit(1)
